@@ -1,16 +1,14 @@
-import nodeResolve from 'rollup-plugin-node-resolve'
-import babel from 'rollup-plugin-babel'
-import replace from 'rollup-plugin-replace'
-import commonjs from 'rollup-plugin-commonjs'
-import { uglify } from '@blaumaus/rollup-plugin-uglify'
+const babel = require('@rollup/plugin-babel').default;
+const commonjs = require('@rollup/plugin-commonjs');
+const nodeResolve = require('@rollup/plugin-node-resolve').default;
+const replace = require('@rollup/plugin-replace');
+const { uglify } = require('@blaumaus/rollup-plugin-uglify');
 
-const env = process.env.NODE_ENV
-
-const config = {
+const config = (isProd) => ({
   input: 'src/index.js',
   output: {
     file:
-      env === 'production'
+      isProd
         ? 'dist/react-leaflet.min.js'
         : 'dist/react-leaflet.js',
     format: 'umd',
@@ -26,23 +24,18 @@ const config = {
     nodeResolve(),
     babel({
       exclude: '**/node_modules/**',
-      runtimeHelpers: true,
+      babelHelpers: 'runtime'
     }),
     replace({
-      'process.env.NODE_ENV': JSON.stringify(env),
+      'process.env.NODE_ENV': JSON.stringify(isProd ? 'production' : 'development'),
     }),
     commonjs(),
-  ],
-}
-
-if (env === 'production') {
-  config.plugins.push(
-    uglify({
+    isProd ? uglify({
       compress: {
         dead_code: true,
       },
-    })
-  )
-}
+    }) : null,
+  ],
+});
 
-export default config
+module.exports = [false, true].map(config);
