@@ -46,8 +46,11 @@
     ".babelrc",
     "dist/*",
     "es/*",
+    "es/utils/*",
     "lib/*",
-    "src/*"
+    "lib/utils/*",
+    "src/*",
+    "src/utils/*"
   ],
   "dependencies": {
     "@babel/runtime": "^7.24.8",
