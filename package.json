@@ -59,9 +59,9 @@
     "warning": "^4.0.3"
   },
   "peerDependencies": {
-    "leaflet": "^1.6.0",
-    "react": "^16.8.0 || ^17.0.0",
-    "react-dom": "^16.8.0  || ^17.0.0"
+    "leaflet": "^1.9.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",
@@ -99,7 +99,7 @@
     "leaflet": "^1.9.4",
     "prettier": "^2.8.8",
     "prettier-eslint": "^11.0.0",
-    "react": "^17.0.1",
+    "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
     "rollup": "^4.19.0",
