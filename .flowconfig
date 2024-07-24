@@ -9,7 +9,6 @@
 [lints]
 all=warn
 deprecated-type=off
-dynamic-export=off
 unclear-type=off
 unsafe-getters-setters=off
 
