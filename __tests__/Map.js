@@ -1,5 +1,6 @@
 /* global describe, expect, it */
 
+import "@inrupt/jest-jsdom-polyfills"
 import ReactDOM from 'react-dom'
 import React, { createRef, Component } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
