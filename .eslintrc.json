@@ -4,7 +4,7 @@
     "es6": true
   },
   "extends": [
-    "plugin:flowtype/recommended",
+    "plugin:ft-flow/recommended",
     "plugin:react/recommended",
     "prettier"
   ],
@@ -14,7 +14,7 @@
     "jsx": true,
     "sourceType": "module"
   },
-  "plugins": ["flowtype", "prettier", "react"],
+  "plugins": ["ft-flow", "prettier", "react"],
   "rules": {
     "no-unused-vars": [
       "error",
