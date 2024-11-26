@@ -91,7 +91,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-promise": "7.1.0",
+    "eslint-plugin-promise": "7.2.0",
     "eslint-plugin-react": "^7.37.2",
     "flow-bin": "^0.131.0",
     "flow-copy-source": "^2.0.9",
@@ -104,7 +104,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rimraf": "^6.0.1",
-    "rollup": "^4.27.3",
+    "rollup": "^4.27.4",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
