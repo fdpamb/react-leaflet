@@ -65,22 +65,22 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.4",
-    "@babel/eslint-parser": "^7.28.4",
+    "@babel/core": "^7.28.5",
+    "@babel/eslint-parser": "^7.28.5",
     "@babel/plugin-proposal-export-default-from": "^7.27.1",
     "@babel/plugin-transform-class-properties": "^7.27.1",
     "@babel/plugin-transform-proto-to-assign": "^7.27.1",
-    "@babel/plugin-transform-runtime": "^7.28.3",
+    "@babel/plugin-transform-runtime": "^7.28.5",
     "@babel/plugin-transform-strict-mode": "^7.27.1",
-    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-env": "^7.28.5",
     "@babel/preset-flow": "^7.27.1",
-    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-react": "^7.28.5",
     "@blaumaus/rollup-plugin-uglify": "^7.0.1",
-    "@inrupt/jest-jsdom-polyfills": "^4.0.5",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^28.0.6",
-    "@rollup/plugin-node-resolve": "^16.0.1",
-    "@rollup/plugin-replace": "^6.0.2",
+    "@inrupt/jest-jsdom-polyfills": "^4.0.8",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-replace": "^6.0.3",
     "babel-jest": "^29.7.0",
     "babel-loader": "^10.0.0",
     "babel-plugin-dev-expression": "^0.2.3",
@@ -103,9 +103,9 @@
     "prettier-eslint": "^16.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "rimraf": "^6.0.1",
-    "rollup": "^4.52.3",
-    "webpack": "^5.102.0",
+    "rimraf": "^6.1.2",
+    "rollup": "^4.53.3",
+    "webpack": "^5.103.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
   },
@@ -119,6 +119,30 @@
     },
     "webpack": {
       "es5-ext": "github:fdpamb/es5-ext#patch-upgrade-0.10.64"
+    },
+    "got": {
+      "form-data": "^3.0.4"
+    },
+    "jsdom": {
+      "form-data": "^4.0.5"
+    },
+    "node-fetch": {
+      "form-data": "^2.5.5"
+    },
+    "web-encoding": {
+      "form-data": "^2.5.5"
+    },
+    "esm-use": {
+      "form-data": "^2.5.5"
+    },
+    "ts-use": {
+      "form-data": "^2.5.5"
+    },
+    "cjs-use": {
+      "form-data": "^2.5.5"
+    },
+    "@blaumaus/rollup-plugin-uglify": {
+      "serialize-javascript": "^3.1.0"
     }
   }
 }
