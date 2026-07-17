@@ -34,10 +34,7 @@ export type LatLng = LeafletLatLng | Array<number> | Object
 export type LatLngBounds = LeafletLatLngBounds | Array<LatLng>
 
 export type ControlPosition =
-  | 'topleft'
-  | 'topright'
-  | 'bottomleft'
-  | 'bottomright'
+  'topleft' | 'topright' | 'bottomleft' | 'bottomright'
 
 export type Point = [number, number] | LeafletPoint
 
